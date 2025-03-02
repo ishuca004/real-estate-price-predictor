@@ -1,9 +1,6 @@
 [build]
-  command = "npm install --unsafe-perm && npm run build"
+  command = "npm install && npm run build"
   publish = "build/"
 
-  [build.environment]
-    SYSTEM_VERSION = "latest"
-
 [[plugins]]
-  package = "@netlify/plugin-install-dependencies"
+  package = "@netlify/plugin-deploy"
